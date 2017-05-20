@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Crystals Collector jQuery Game</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	
+</head>
+<body>
+<!-- Page layout -->
+<div class= "container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Crystals Collector!</h1>
+			
+			<div class="instructions">
+					<p>Instructions:</p>
+					<p>You will be given a random number at the start of the game.</p>
+					<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</p>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+					<p>Each time the game starts, the game will randomly change the value of each crystal.</p>
+			</div>	
+		</div>	
+	</div>
+	
+	<div class="row">
+		
+		<div class="col-md-12">
+			<div class="col-md-12">
+				<h4>Match This Number: <span class= "numberdisplay"></span></h4>
+			</div>
+			
+			<div class="col-md-12">
+				<h4>Your Number: <span class= "guessdisplay">0</span></h4>
+			</div>
+
+			<div class="col-md-12">
+				<h4></h4>
+
+			
+			<div class="gems">
+			
+				<img src="assets/images/blue.gif" class="gemImage" id="one" alt="blue gem" width= 100 height=100>
+				<img src="assets/images/red.gif" class="gemImage" id="two" alt="red gem" width= 100 height=100>
+				<img src="assets/images/yellow.gif" class="gemImage" id="three" alt="yellow gem" width= 100 height=100>
+				<img src="assets/images/green.gif" class="gemImage" id="four" alt="green gem" width= 100 height=100>
+			
+			</div>	
+
+		<div class= "winsAndLosses">
+			<h4>Wins:<span id="numberWins"></span>
+			<br><br>
+			Losses:<span id="numberLosses"></span>
+			</h4>
+		</div>	
+
+		<div class="userTotal">
+			<h4>Your total score is:<span id="finalTotal"></span></h4>
+		</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS and jQuery-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<link rel=
+</body>
+</html>
+
