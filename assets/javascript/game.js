@@ -76,7 +76,7 @@ function reset() {
 			randomtext[0] = "You're so smart-- can I have your number?";
 			randomtext[1] = "You are number ONE!";
 			randomtext[2] = "Your math knowledge is infinite!";
-			var i = Math.floor(Math.random() * 2 + 1);
+			var i = Math.floor(Math.random() * 3);
 			return randomtext[i];
 	}
 
