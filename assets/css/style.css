@@ -1,21 +1,15 @@
 body {
-	background: url(../images/Time-Crystals.jpg);
-	background-size: 90% 100%;
-	background-position: right bottom;
-
+	background: url(../images/crystal.jpg);
+	background-size: 130%;
+	background-position: left center;
 }	
 
 .container {
-	
 	padding-bottom: 10px;
 	font-family: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: medium;
 }
 
-#firstrow {
-	position: relative;
-	left: 15px;
-}
 
 h1 {
 	display: inline-block;
@@ -29,12 +23,16 @@ h1 {
 } 
 
 #title {
+	position: relative;
+	left:-15px;
 	color:white;
 	background: black;
 }
 
 .instructions {
-	padding: 20px 20px; 
+	position: relative;
+	left:-15px;
+	padding: 10px 10px; 
 	font-size: 18px;
 	max-width: 800px;	
 	max-height: 400px;	
@@ -45,10 +43,8 @@ h1 {
 }
 
 .match {
-
 	height: 75px;
 	width: 265px;
-	
 }
 
 .numberdisplay,
@@ -71,9 +67,11 @@ h4 {
 
 .gems {
 	margin-bottom: 10px;
+
 }
 
 #numWins {
 	background: SteelBlue;
 	color: white;
 }
+

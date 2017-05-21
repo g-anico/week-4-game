@@ -71,7 +71,7 @@ function reset() {
             reset();
         };
 	};
-//Some random win alerts for fun ;)
+//Some random win alerts for fun 
 	function winAlert() {
 		var randomtext = new Array();
 			randomtext[0] = "You're so smart-- can I have your number?";
@@ -80,19 +80,6 @@ function reset() {
 			var i = Math.floor(Math.random() * 3);
 			return randomtext[i];
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
