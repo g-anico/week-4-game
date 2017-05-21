@@ -1,8 +1,8 @@
-// Make all your variables
+//Listing all global variables at the top
 
-//Generates a random number
+//Generates a random number 1-120
 var random = Math.floor(Math.random() *120+1)
-//Generates a value for each crystal
+//Generates a value 1-12 for each crystal
 var blue = Math.floor(Math.random() * 12 +1)
 var red = Math.floor(Math.random() *12 +1)
 var yellow = Math.floor(Math.random() *12 +1)
@@ -16,7 +16,7 @@ var losses = 0;
 $(".numberdisplay").html(random);
 
 
-//Create a function for clicking blue, red, yellow, green respectively 
+//on click function for blue, red, yellow, and green respectively 
 $("#blue").click(function() {
 	update(blue);
 	console.log(blue);
@@ -34,7 +34,7 @@ $("#green").click(function() {
 	console.log(green);
 });
 
-//Write a reset function
+//Reset function to run after a win or loss
 function reset() {
 
 	random= Math.floor(Math.random() * 120 + 1)
@@ -50,8 +50,9 @@ function reset() {
 
 };
 
-//Function to update the user's total guess
-//with no parameter, see what happens;
+//Function to update the user's total guess. color is the parameter, 
+//and the function's argument is the value passed to the function so here,
+//guessTotal keeps getting added to the current guess
 	function update(color) {
 //add value to the current value
 		guessTotal += color;
@@ -70,7 +71,7 @@ function reset() {
             reset();
         };
 	};
-//wrote some random win alerts for fun ;)
+//Some random win alerts for fun ;)
 	function winAlert() {
 		var randomtext = new Array();
 			randomtext[0] = "You're so smart-- can I have your number?";

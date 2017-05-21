@@ -1,46 +1,68 @@
 .container {
 	background: lavender;
 	padding-bottom: 10px;
+	font-family: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: medium;
+}
+
+#firstrow {
+	position: relative;
+	left: 15px;
 }
 
 h1 {
-	background: AntiqueWhite; 
+	background: AliceBlue; 
 	display: inline-block;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 90px;
 	color: black;
 	text-align: center;
+	padding: 10px;
+
 
 } 
 .instructions {
-	padding: 30px 20px 30px 40px; 
-	font-size: 16px;
+	padding: 20px 20px; 
+	font-size: 18px;
 	max-width: 800px;	
 	max-height: 400px;	
-	background-color: AliceBlue;
+	background-color: Steelblue;
+	color:white;
 	font-family: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	
 }
 
 .match {
-	height: 50px;
-	width: 225px;
-	line-height: 30px;
+
+	height: 75px;
+	width: 265px;
+	
+}
+
+.numberdisplay,
+.guessdisplay {
+	font-size: 40px;
+}
+
+#yourNum {
+	background: SteelBlue;
+	color: white;
 }
 
 h4 {
 	background: AntiqueWhite;
-	width: 150px;
+	width: 125px;
 	height: 50px;
-
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 .gems {
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
-.gemImage {
-
-	border: solid AliceBlue 10px;
+#numWins {
+	background: SteelBlue;
+	color: white;
 }

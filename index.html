@@ -14,11 +14,11 @@
 <body>
 <!-- Page layout -->
 <div class= "container">
-	<div class="row">
+	<div class="row" id="firstrow">
 		<div class="col-md-12">
 			<h1>Crystals Collector!</h1>
 			
-			<div class="instructions">
+			<div class="instructions" id="secondrow">
 					<p>Instructions:</p>
 					<p>You will be given a random number at the start of the game.</p>
 					<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
@@ -33,39 +33,34 @@
 		
 		<div class="col-md-12">
 			<div class="col-md-12">
-				<h4 class="match">Match This Number: <span class= "numberdisplay"></span></h4>
+				<h4 class="match">Match This Number:&nbsp; <span class= "numberdisplay"></span></h4>
 			</div>
 			
 			<div class="col-md-12">
-				<h4>Your Number: <span class= "guessdisplay">0</span></h4>
+				<h4 class="match" id="yourNum">Your Number:&nbsp; <span class= "guessdisplay">0</span></h4>
 			</div>
 
 			<div class="col-md-12">
-				
 				<div class="gems">
-			
-					<img src="assets/images/blue.gif" class="gemImage" id="blue" alt="blue gem" width= 100 height=100>
-					<img src="assets/images/red.gif" class="gemImage" id="red" alt="red gem" width= 100 height=100>
-					<img src="assets/images/yellow.gif" class="gemImage" id="yellow" alt="yellow gem" width= 100 height=100>
+					<img src="assets/images/blue.gif" class="gemImage" id="blue" alt="blue gem" width= 100 height=100>&nbsp;
+					<img src="assets/images/red.gif" class="gemImage" id="red" alt="red gem" width= 100 height=100>&nbsp;
+					<img src="assets/images/yellow.gif" class="gemImage" id="yellow" alt="yellow gem" width= 100 height=100>&nbsp;
 					<img src="assets/images/green.gif" class="gemImage" id="green" alt="green gem" width= 100 height=100>
-			
 				</div>	
 
-		<div class= "winsAndLosses">
-			<h4>Wins:<span id="numberWins"></span></h4>
-			<h4>Losses:<span id="numberLosses"></span></h4>
+			<div class= "winsAndLosses">
+				<h4 id="numWins">Wins:&nbsp;<span id="numberWins"></span></h4>
+				<h4>Losses:&nbsp;<span id="numberLosses"></span></h4>
+			</div>	
+			</div>
 		</div>	
-
-		
-	</div>
+	</div>	
 </div>		
 
-
-<!-- JS and jQuery-->
+	<!-- JS and jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-	
 </body>
 </html>
 
