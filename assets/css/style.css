@@ -69,9 +69,17 @@ h4 {
 	margin-bottom: 10px;
 
 }
-
 #numWins {
+	background: AntiqueWhite;
+	color:black;
+}
+
+#numLosses {
 	background: SteelBlue;
 	color: white;
+}
+#numberWins,
+#numberLosses {
+	font-size: 30px;
 }
 
