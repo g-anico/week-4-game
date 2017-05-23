@@ -1,8 +1,8 @@
 //Listing all global variables at the top
 
-//Generates a random number 1-120
-var random = Math.floor(Math.random() *120+1)
-//Generates a value 1-12 for each crystal
+//Generates a random number 19-120
+var random = Math.floor(Math.random() *102+19)
+//Generates a random value 1-12 for each crystal
 var blue = Math.floor(Math.random() * 12 +1)
 var red = Math.floor(Math.random() *12 +1)
 var yellow = Math.floor(Math.random() *12 +1)
@@ -15,21 +15,23 @@ var losses = 0;
 //Displays the number to match on the page
 $(".numberdisplay").html(random);
 
+//	click function for blue, red, yellow, and green respectively 
+//.on("click", function(){...}); works the same as .click(function(){...});
 
-//on click function for blue, red, yellow, and green respectively 
-$("#blue").click(function() {
+$("#blue").on("click", function() {
 	update(blue);
 	console.log(blue);
 });
-$("#red").click(function() {
+
+$("#red").on("click", function() {
 	update(red);
 	console.log(red);
 });
-$("#yellow").click(function() {
+$("#yellow").on("click", function() {
 	update(yellow);
 	console.log(yellow);
 });
-$("#green").click(function() {
+$("#green").on("click", function() {
 	update(green);
 	console.log(green);
 });
@@ -37,7 +39,7 @@ $("#green").click(function() {
 //Reset function to run after a win or loss
 function reset() {
 
-	random= Math.floor(Math.random() * 120 + 1)
+	random= Math.floor(Math.random() * 102 + 19)
 	$(".numberdisplay").html(random)
 
 	blue = Math.floor(Math.random() * 12 +1)
@@ -80,8 +82,6 @@ function reset() {
 			var i = Math.floor(Math.random() * 3);
 			return randomtext[i];
 	}
-
-
 
 
 
