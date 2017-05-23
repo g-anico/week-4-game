@@ -18,20 +18,20 @@ $(".numberdisplay").html(random);
 //	click function for blue, red, yellow, and green respectively 
 //.on("click", function(){...}); works the same as .click(function(){...});
 
-$("#blue").on("click", function() {
+$("#blue").click(function() {
 	update(blue);
 	console.log(blue);
 });
 
-$("#red").on("click", function() {
+$("#red").click(function() {
 	update(red);
 	console.log(red);
 });
-$("#yellow").on("click", function() {
+$("#yellow").click(function() {
 	update(yellow);
 	console.log(yellow);
 });
-$("#green").on("click", function() {
+$("#green").click(function() {
 	update(green);
 	console.log(green);
 });
